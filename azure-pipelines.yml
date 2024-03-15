@@ -16,7 +16,6 @@ steps:
     ng build 
   displayName: 'npm install and build'
 
-- task: BatchScript@1
+- task: CmdLine@2
   inputs:
-    filename: '$(Build.ArtifactStagingDirectory)'
-    arguments: 'ls'
+    script: 'ls $(System.DefaultworkingDIrectory)'
