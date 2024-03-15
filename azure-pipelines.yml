@@ -18,4 +18,4 @@ steps:
 
 - task: CmdLine@2
   inputs:
-    script: 'ls $(System.DefaultworkingDIrectory)/dist'
+    script: 'ls $(System.DefaultworkingDIrectory)/dist/mdb-angular-ui-kit-free'
