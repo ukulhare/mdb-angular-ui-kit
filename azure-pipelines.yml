@@ -16,10 +16,6 @@ steps:
     ng build 
   displayName: 'npm install and build'
 
-- task: CmdLine@2
-  inputs:
-    script: 'ls $(System.DefaultworkingDIrectory)/dist/mdb-angular-ui-kit-free'
-
 - task: PublishBuildArtifacts@1
   inputs:
     PathtoPublish: '$(System.DefaultworkingDIrectory)/dist/mdb-angular-ui-kit-free'
