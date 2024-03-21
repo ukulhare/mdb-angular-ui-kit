@@ -18,6 +18,6 @@ steps:
 
 - task: PublishBuildArtifacts@1
   inputs:
-    PathtoPublish: '$(System.DefaultworkingDIrectory)'
+    PathtoPublish: 'C:\azagent\_work\1\s\projects\mdb-ui-kit'
     ArtifactName: 'AngKit'
     publishLocation: 'Container'
