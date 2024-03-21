@@ -18,10 +18,10 @@ steps:
   
 - task: CmdLine@2
   inputs:
-    script: 'ls $(System.DefaultworkingDIrectory)azagent/_work/1/s/projects/mdb-angular-ui-kit-free'
+    script: 'ls $(System.DefaultworkingDIrectory)'
 
 - task: PublishBuildArtifacts@1
   inputs:
-    PathtoPublish: '$(System.DefaultworkingDIrectory)azagent/_work/1/s/projects/mdb-angular-ui-kit-free'
+    PathtoPublish: '$(System.DefaultworkingDIrectory)'
     ArtifactName: 'AngKit'
     publishLocation: 'Container'
