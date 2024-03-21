@@ -18,7 +18,7 @@ steps:
   
 - task: CmdLine@2
   inputs:
-    script: 'ls $(System.DefaultworkingDIrectory)'
+    script: '$(System.DefaultworkingDIrectory)'
 
 - task: PublishBuildArtifacts@1
   inputs:
