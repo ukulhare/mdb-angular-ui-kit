@@ -25,6 +25,6 @@ steps:
   
 - task: PublishBuildArtifacts@1
   inputs:
-    PathtoPublish: '$(Build.ArtifactStagingDirectory)/ls'
-    ArtifactName: 'dist'
+    PathtoPublish: 'C:\azagent\_work\1\s\dist\mdb-angular-ui-kit-free'
+    ArtifactName: 'AngKit'
     publishLocation: 'Container'
