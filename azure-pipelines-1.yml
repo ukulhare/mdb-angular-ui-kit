@@ -22,3 +22,9 @@ steps:
 - task: CmdLine@2
   inputs:
     script: 'npm run'
+  
+- task: PublishBuildArtifacts@1
+  inputs:
+    PathtoPublish: '$(Build.ArtifactStagingDirectory)/dist'
+    ArtifactName: 'dist'
+    publishLocation: 'Container'
